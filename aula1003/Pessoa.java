@@ -15,15 +15,19 @@ public class Pessoa {
         return idade;
     }
 
-    public int setIdade(int idade){
-        return this.idade = idade;
+    public void setIdade(int idade){
+        this.idade = idade;
     }
 
     public String getNome(){
         return nome;
     }
 
-    public String setNome(String nome){
-        return this.nome = nome;
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String toString(){
+        return "\nNome: " + nome + "\nIdade: " + idade;  
     }
 }

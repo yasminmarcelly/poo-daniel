@@ -10,23 +10,23 @@ public class PessoaFisica extends Pessoa {
         return cpf;
     }
 
-    public String setCpf(String cpf){
-        return this.cpf = cpf;
+    public void setCpf(String cpf){
+         this.cpf = cpf;
     }
 
     public String getNome(){
         return super.getNome();
     }
 
-    public String setNome(String nome){
-        return super.setNome(nome);
+    public void setNome(String nome){
+        super.setNome(nome);
     }
 
     public int getIdade(){
         return super.getIdade();
     }
 
-    public int setIdade(int idade){
-        return super.setIdade(idade);
+    public void setIdade(int idade){
+        super.setIdade(idade);
     }
 }

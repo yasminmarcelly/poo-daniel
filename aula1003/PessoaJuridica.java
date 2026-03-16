@@ -1,8 +1,8 @@
 public class PessoaJuridica extends Pessoa{
     private String cnpj;
 
-    public PessoaJuridica(String nome, String cnpj){
-        super(nome);
+    public PessoaJuridica(String nome,int idade, String cnpj){
+        super(nome,idade);
         this.cnpj = cnpj;
     }
 
@@ -10,15 +10,23 @@ public class PessoaJuridica extends Pessoa{
         return cnpj;
     }
 
-    public String setCnpj(String cnpj){
-        return this.cnpj = cnpj;
+    public void setCnpj(String cnpj){
+         this.cnpj = cnpj;
     }
 
     public String getNome(){
         return super.getNome();
     }
 
-    public String setNome(String nome){
-        return super.setNome(nome);
+    public void setNome(String nome){
+         super.setNome(nome);
+    }
+
+    public int getIdade(){
+        return super.getIdade();
+    }
+
+    public void setIdade(int idade){
+        super.setIdade(idade);
     }
 }
